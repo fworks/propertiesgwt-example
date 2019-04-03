@@ -58,6 +58,17 @@
       <version>4.11</version>
       <scope>test</scope>
     </dependency>
+    
+    
+    <!-- add propertiesgwt dependency -->
+     <dependency>
+      <groupId>com.github.fworks</groupId>
+			<artifactId>propertiesgwt</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+      <scope>provided</scope>
+    </dependency>
+    
+    
   </dependencies>
 
   <build>
@@ -70,7 +81,7 @@
       <plugin>
         <groupId>net.ltgt.gwt.maven</groupId>
         <artifactId>gwt-maven-plugin</artifactId>
-        <version>1.0-rc-8</version>
+        <version>1.0-rc-10</version>
         <executions>
           <execution>
             <goals>

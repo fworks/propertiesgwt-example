@@ -1,6 +1,7 @@
 package fworks.client;
 
 import fworks.shared.FieldVerifier;
+import com.github.fworks.propertiesgwt.client.PropertiesGwt;
 import com.google.gwt.core.client.EntryPoint;
 import com.google.gwt.core.client.GWT;
 import com.google.gwt.event.dom.client.ClickEvent;
@@ -16,6 +17,7 @@ import com.google.gwt.user.client.ui.Label;
 import com.google.gwt.user.client.ui.RootPanel;
 import com.google.gwt.user.client.ui.TextBox;
 import com.google.gwt.user.client.ui.VerticalPanel;
+import elemental2.dom.DomGlobal;
 
 /**
  * Entry point classes define <code>onModuleLoad()</code>.
@@ -38,9 +40,14 @@ public class ExampleApp implements EntryPoint {
    * This is the entry point method.
    */
   public void onModuleLoad() {
+    // set the name from the properties file
+    DomGlobal.document.getElementById("h1").innerHTML = PropertiesGwt.getValue("app-name");
+    
+    
     final Button sendButton = new Button("Send");
     final TextBox nameField = new TextBox();
-    nameField.setText("GWT User");
+    // from the properties file
+    nameField.setText(PropertiesGwt.getValue("default-user-name"));
     final Label errorLabel = new Label();
 
     // We can add style names to widgets
