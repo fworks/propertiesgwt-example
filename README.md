@@ -1,10 +1,9 @@
 # propertiesgwt-example
 
-![Travis (.org) branch](https://img.shields.io/travis/fworks/propertiesgwt-example/master.svg)
-![GitHub](https://img.shields.io/github/license/fworks/propertiesgwt-example.svg)
+[![](https://img.shields.io/travis/fworks/propertiesgwt-example/master.svg)](https://travis-ci.org/fworks/propertiesgwt-example)
+[![](https://img.shields.io/github/license/fworks/propertiesgwt-example.svg)](#)
 
-Simple example showing how to use the propertiesgwt library.
-
+Simple example showing how to use the [propertiesgwt](https://github.com/fworks/propertiesgwt) library.
 
 # Notes
 
